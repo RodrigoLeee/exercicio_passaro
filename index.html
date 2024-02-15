@@ -17,7 +17,8 @@
 <body>
 
 <script>
-
+//cria a tela e configura a mesma
+//define dimensões como sendo 800x600
 var config = {
     type: Phaser.AUTO,
     width: 800,
@@ -30,9 +31,12 @@ var config = {
     }
 };
 
+//Carrega o Phaser dentro de uma variável jogo
 var game = new Phaser.Game(config);
 
+//cria a variável passarinho
 var passarinho;
+
 
 function preload() {
     this.load.image('bg', 'assets/bg_space.png');
