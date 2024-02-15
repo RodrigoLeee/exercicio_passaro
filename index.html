@@ -61,7 +61,7 @@ function create() {
 }
 
 function update() { 
-    if (passarinho.x == 100) {
+    if (passarinho.x === 100) {
         passarinho.setFlip(false, false);
         passarinho.ida = true;
     }
@@ -69,7 +69,7 @@ function update() {
         console.log("O passarinho passa a se movimentar para a direita.");
         passarinho.x += 5;
     }
-    if (passarinho.x == 700) {
+    if (passarinho.x === 700) {
         passarinho.setFlip(true, false);
         passarinho.ida = false;
     }
@@ -77,13 +77,13 @@ function update() {
         console.log("O passarinho passa a se movimentar para a esquerda.")
         passarinho.x -= 5;
     }
-    if (passarinho.y == 50){
+    if (passarinho.y === 50){
         passarinho.sobe = false
     }
     if (passarinho.y >= 50 && passarinho.sobe == false) {
         passarinho.y += 5;
     }
-    if (passarinho.y == 550){
+    if (passarinho.y === 550){
         passarinho.sobe = true
     }
     if (passarinho.y <= 550 && passarinho.sobe == true) {
