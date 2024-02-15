@@ -41,7 +41,7 @@ function preload() {
 
 function create() {
     this.add.image(400, 300, 'bg').setScale(1.2);
-    passarinho = this.add.sprite(100, 300, 'bird').setScale(1.3);
+    passarinho = this.add.sprite(100, 100, 'bird').setScale(1.3);
 
     this.anims.create({
         key: 'fly',
@@ -70,6 +70,18 @@ function update() {
     if (passarinho.x > 100 && passarinho.ida == false) {
         console.log("O passarinho passa a olhar e se movimentar para a esquerda.")
         passarinho.x -= 5;
+    }
+    if (passarinho.y == 100){
+        passarinho.sobe = false
+    }
+    if (passarinho.y >= 100 && passarinho.sobe == false) {
+        passarinho.y += 5;
+    }
+    if (passarinho.y == 600){
+        passarinho.sobe = true
+    }
+    if (passarinho.y <= 600 && passarinho.sobe == true) {
+        passarinho.y -= 5;
     }
 }
 
