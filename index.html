@@ -80,13 +80,13 @@ function update() {
         console.log("O passarinho passa a se movimentar para a direita.");
         passarinho.x += 10;
     }
-    //Quando a posicao do passarinho é igual a 100, muda a orientação da sprite 'passarinho'
-    //Transforma a variável passarinho.ida em true
+    //Quando a posicao do passarinho é igual a 600, muda a orientação da sprite 'passarinho'
+    //Transforma a variável passarinho.ida em false
     if (passarinho.x === 700) {
         passarinho.setFlip(true, false);
         passarinho.ida = false;
     }
-    //Adiciona 10 no posicao do passarinho
+    //Subtrai 10 no posicao do passarinho
     //movimento para esquerda
     if (passarinho.x > 100 && passarinho.ida == false) {
         console.log("O passarinho passa a se movimentar para a esquerda.")
