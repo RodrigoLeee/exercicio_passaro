@@ -67,7 +67,15 @@ function create() {
 
 }
 
+let loopwhile = 0;
+
 function update() { 
+
+    while (loopwhile < 500) {
+        console.log(1+loopwhile);
+        loopwhile += 2;
+    }
+
     //Quando a posicao do passarinho é igual a 100, muda a orientação da sprite 'passarinho'
     //Transforma a variável passarinho.ida em true
     if (passarinho.x === 100) {
